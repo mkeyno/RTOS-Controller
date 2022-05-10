@@ -1,20 +1,16 @@
-# Objective
 
-This documents comprised all information regards to M&M feedback data and setting parameters through Wi-Fi & CAN message 
 
 # Scope of work
 
-This documents consist of all information for setting  the two sensor data coming from   4 set of flow sensors ,  INA219 current sensor   and calibration of 2 DRV8825 stepper driver
+This  repository consist firmware using RTOS API and ESP32 MCU  for setting  the two sensor data coming from   4 set of flow sensors ,  INA219 current sensor   and calibration of 2 DRV8825 stepper driver
 
-## Introduction 
-	Firmware version 2.4 uploaded at   repository with name of RTOS-controler
+All information about sensor and parameters setting are available in wifi interface as well as CAN message
 
-
-•	Software algorithms 
+## Software algorithms 
 Firmware use pulse counter (PCNT) to reading the 4 flow sensor (razing edge), then time duration converted to frequency and multiplying with scale factor, then every 200 ms each side of sensor date transmitted via CAN message, and if Wi-Fi is enable, then both data send to webpage as JSON message 
 use INA219 lib for reading the current sensor, 
 
-•	Wi-Fi features 
+## Wi-Fi features 
 Wi-Fi features can be enable and disable both by web interface and CAN message 
 Wi-Fi can be enable in two of Access Point & Connection Mode 
 In AP mode the SSID is 
