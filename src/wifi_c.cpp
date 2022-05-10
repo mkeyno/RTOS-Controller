@@ -89,7 +89,7 @@ void start_wifi()
       PRINTLN("acess point");
       WiFi.mode(WIFI_AP);
       WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));
-      String temp_name="OXIN_SPARY_" +String(ESP_getChipId(), HEX)+PROGRAM_VERSION;
+      String temp_name="AP_" +String(ESP_getChipId(), HEX)+PROGRAM_VERSION;
       WiFi.softAP(temp_name.c_str(),"12345678");
       Param.MyServer=temp_name; Param.information["Server" ]=Param.MyServer;
       Param.MyIP=WiFi.softAPIP().toString();Param.information["IP" ]=Param.MyIP;
@@ -122,7 +122,7 @@ void start_wifi()
               PRINTS("AP IP address: ",Param.MyIP);
               PRINTS("My MAC: ",Param.MyMAC);
               PRINTS("My Server: ",Param.MyServer);
-                if (!MDNS.begin("oxin")) { //http://oxin.local
+                if (!MDNS.begin("home")) { //http://home.local
                   PRINTLN("Error setting up MDNS responder!");
                   while (1) {
                     delay(1000);
