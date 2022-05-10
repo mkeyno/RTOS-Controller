@@ -17,11 +17,11 @@ use INA219 lib for reading the current sensor,
 Wi-Fi features can be enable and disable both by web interface and CAN message 
 Wi-Fi can be enable in two of Access Point & Connection Mode 
 In AP mode the SSID is 
-"OXIN_M&M_" + ESP_ChipId(HEX)+PROGRAM_VERSION;
+"AP_" + ESP_ChipId(HEX)+PROGRAM_VERSION;
 
 And defaults password is “12345678”
 In AP mode IP address of webpage is 192.168.4.1
-In Connection Mode IP address of webpage is 192.168.1.178 or http://oxin.local/
+In Connection Mode IP address of webpage is 192.168.1.178 or http://home.local/
 In both Wi-Fi modes defaults username and password is “admin”
 https is NOT enable for webpage interface
 Three links available for webpage interface as follow
