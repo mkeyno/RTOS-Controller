@@ -4,7 +4,7 @@ This documents comprised all information regards to M&M feedback data and settin
 
 # Scope of work
 
-This documents consist of all information for setting up and calibration the two sensor data coming from a pair of proximity sensors    
+This documents consist of all information for setting up and calibration the two sensor data coming from a 4 of proximity sensors and INA219 current sensor   
 
 ## Introduction 
 	Firmware version 2.4 uploaded at   repository with name of RTOS-controler
